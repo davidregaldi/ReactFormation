@@ -82,21 +82,28 @@
 // console.log(user1);
 // user1.greet();
 
-const hobbies = ["Sports", "Cooking", "Reading"];
-console.log(hobbies);
-console.log(hobbies[2]);
-hobbies.push("Swimming");
-console.log(hobbies);
-console.log(hobbies[3]);
-const index = hobbies.findIndex((item) => {
-    return item === "Sports";
-})
-// const index = hobbies.findIndex(item => item === "Sports");
-console.log(index);
-// const editedHobbies = hobbies.map((item) => item + "!")
-const editedHobbies = hobbies.map((item) => ({ name: item }))
-console.log(editedHobbies);
+// const hobbies = ["Sports", "Cooking", "Reading"];
+// console.log(hobbies);
+// console.log(hobbies[2]);
+// hobbies.push("Swimming");
+// console.log(hobbies);
+// console.log(hobbies[3]);
+// const index = hobbies.findIndex((item) => {
+//     return item === "Sports";
+// })
+// // const index = hobbies.findIndex(item => item === "Sports");
+// console.log(index);
+// // const editedHobbies = hobbies.map((item) => item + "!")
+// const editedHobbies = hobbies.map((item) => ({ name: item }))
+// console.log(editedHobbies);
 
+function transformToObjects(numberArray) {
+    return numberArray.map((item) => ({ val: item }));
+}
+
+const numberArray = [1, 2, 3];
+const transformedArray = transformToObjects(numberArray);
+console.log(transformedArray);
 
 
 
