@@ -13,14 +13,27 @@
 // console.log(userMessage);
 // console.log(userMessage2);
 
-console.log(10 * 5);
-console.log("hello" + "world");
-console.log(10 === 5);
-console.log(10 === 10);
-console.log(10 >= 5);
+// console.log(10 * 5);
+// console.log("hello" + "world");
+// console.log(10 === 5);
+// console.log(10 === 10);
+// console.log(10 >= 5);
+// if (10 === 10) {
+//     console.log("works !");
+// }
 
-if (10 === 10) {
-    console.log("works !");
+function createUserGreeting(userName, message = "Hello !") {
+    if (userName !== undefined) {
+        return `${userName}. ${message}`;
+    } else {
+        return message;
+    }
 }
+console.log(createUserGreeting());
+console.log(createUserGreeting("Max", "Hello, what's up ?"));
+console.log(createUserGreeting("Manuel", "Hello !"));
+const greeting1 = createUserGreeting("Julie", "Coucou !");
+console.log(greeting1);
+
 
 
