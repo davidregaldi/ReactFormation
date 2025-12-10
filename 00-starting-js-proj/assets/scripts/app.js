@@ -50,38 +50,52 @@
 //     return userName + message;
 // }
 
-const user = {
-    name: "Max",
-    age: 34,
-    isMonster: true,
-    greet() {
-        let message = ""
-        if (this.isMonster) {
-            message = "You are a monster !";
-        }
-        console.log(`Hello! ${this.name}. ${message}`);
-    }
-};
-user.greet();
-user.name = "Manuel";
-user.isMonster = false;
-user.greet();
-console.log(user.name, user.age, user.isMonster);
+// const user = {
+//     name: "Max",
+//     age: 34,
+//     isMonster: true,
+//     greet() {
+//         let message = ""
+//         if (this.isMonster) {
+//             message = "You are a monster !";
+//         }
+//         console.log(`Hello! ${this.name}. ${message}`);
+//     }
+// };
+// user.greet();
+// user.name = "Manuel";
+// user.isMonster = false;
+// user.greet();
+// console.log(user.name, user.age, user.isMonster);
 
-class User {
-    constructor(name, age, monster) {
-        this.name = name;
-        this.age = age;
-        this.monster = monster;
-    }
-    greet() {
-        console.log(`Hello! ${this.name}. ${this.monster ? "You are a monster !" : "You are not a monster !"}`);
-    }
-}
+// class User {
+//     constructor(name, age, monster) {
+//         this.name = name;
+//         this.age = age;
+//         this.monster = monster;
+//     }
+//     greet() {
+//         console.log(`Hello! ${this.name}. ${this.monster ? "You are a monster !" : "You are not a monster !"}`);
+//     }
+// }
+// const user1 = new User("Michel", 34, true);
+// console.log(user1);
+// user1.greet();
 
-const user1 = new User("Michel", 34, true);
-console.log(user1);
-user1.greet();
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies);
+console.log(hobbies[2]);
+hobbies.push("Swimming");
+console.log(hobbies);
+console.log(hobbies[3]);
+const index = hobbies.findIndex((item) => {
+    return item === "Sports";
+})
+// const index = hobbies.findIndex(item => item === "Sports");
+console.log(index);
+// const editedHobbies = hobbies.map((item) => item + "!")
+const editedHobbies = hobbies.map((item) => ({ name: item }))
+console.log(editedHobbies);
 
 
 
