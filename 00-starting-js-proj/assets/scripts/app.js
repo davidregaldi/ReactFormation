@@ -35,16 +35,21 @@
 // const greeting1 = createUserGreeting("Julie", "Coucou !");
 // console.log(greeting1);
 
-function combine(a, b, c) {
-    if (![a, b, c].every(Number.isFinite) || c === 0) {
-        return "Invalid input !";
-    }
-    return a * b / c;
+// function combine(a, b, c) {
+//     if (![a, b, c].every(Number.isFinite) || c === 0) {
+//         return "Invalid input !";
+//     }
+//     return a * b / c;
+// }
+// console.log(combine(10, 5, 0));
+// console.log(combine("10", "fgdgdf", 1));
+// console.log(combine(10, 50, 8));
+
+export default (userName, message) => {
+    console.log('Hello');
+    return userName + message;
 }
 
-console.log(combine(10, 5, 0));
-console.log(combine("10", "fgdgdf", 1));
-console.log(combine(10, 50, 8));
 
 
 
