@@ -22,18 +22,29 @@
 //     console.log("works !");
 // }
 
-function createUserGreeting(userName, message = "Hello !") {
-    if (userName !== undefined) {
-        return `${userName}. ${message}`;
-    } else {
-        return message;
+// function createUserGreeting(userName, message = "Hello !") {
+//     if (userName !== undefined) {
+//         return `${userName}. ${message}`;
+//     } else {
+//         return message;
+//     }
+// }
+// console.log(createUserGreeting());
+// console.log(createUserGreeting("Max", "Hello, what's up ?"));
+// console.log(createUserGreeting("Manuel", "Hello !"));
+// const greeting1 = createUserGreeting("Julie", "Coucou !");
+// console.log(greeting1);
+
+function combine(a, b, c) {
+    if (![a, b, c].every(Number.isFinite) || c === 0) {
+        return "Invalid input !";
     }
+    return a * b / c;
 }
-console.log(createUserGreeting());
-console.log(createUserGreeting("Max", "Hello, what's up ?"));
-console.log(createUserGreeting("Manuel", "Hello !"));
-const greeting1 = createUserGreeting("Julie", "Coucou !");
-console.log(greeting1);
+
+console.log(combine(10, 5, 0));
+console.log(combine("10", "fgdgdf", 1));
+console.log(combine(10, 50, 8));
 
 
 
