@@ -45,10 +45,43 @@
 // console.log(combine("10", "fgdgdf", 1));
 // console.log(combine(10, 50, 8));
 
-export default (userName, message) => {
-    console.log('Hello');
-    return userName + message;
+// export default (userName, message) => {
+//     console.log('Hello');
+//     return userName + message;
+// }
+
+const user = {
+    name: "Max",
+    age: 34,
+    isMonster: true,
+    greet() {
+        let message = ""
+        if (this.isMonster) {
+            message = "You are a monster !";
+        }
+        console.log(`Hello! ${this.name}. ${message}`);
+    }
+};
+user.greet();
+user.name = "Manuel";
+user.isMonster = false;
+user.greet();
+console.log(user.name, user.age, user.isMonster);
+
+class User {
+    constructor(name, age, monster) {
+        this.name = name;
+        this.age = age;
+        this.monster = monster;
+    }
+    greet() {
+        console.log(`Hello! ${this.name}. ${this.monster ? "You are a monster !" : "You are not a monster !"}`);
+    }
 }
+
+const user1 = new User("Michel", 34, true);
+console.log(user1);
+user1.greet();
 
 
 
