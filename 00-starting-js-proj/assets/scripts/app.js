@@ -104,16 +104,28 @@
 // const transformedArray = transformToObjects(numberArray);
 // console.log(transformedArray);
 
-const [firstName, lastName] = ["max", "Scharzmuller"];
-console.log(firstName);
-console.log(lastName);
-const { name: userName, age } = {
-    name: "max",
+// const [firstName, lastName] = ["max", "Scharzmuller"];
+// console.log(firstName);
+// console.log(lastName);
+// const { name: userName, age } = {
+//     name: "max",
+//     age: 34,
+// }
+// console.log(userName, age);
+
+const hobbies = ["sports", "cooking"];
+const newHobbies = ["reading"];
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies);
+const user = {
+    name: "Max",
     age: 34,
 }
-console.log(userName, age);
-
-
+const extendedUser = {
+    isAdmin: true,
+    ...user
+}
+console.log(extendedUser);
 
 
 
