@@ -113,20 +113,32 @@
 // }
 // console.log(userName, age);
 
-const hobbies = ["sports", "cooking"];
-const newHobbies = ["reading"];
-const mergedHobbies = [...hobbies, ...newHobbies];
-console.log(mergedHobbies);
-const user = {
-    name: "Max",
-    age: 34,
-}
-const extendedUser = {
-    isAdmin: true,
-    ...user
-}
-console.log(extendedUser);
+// const hobbies = ["sports", "cooking"];
+// const newHobbies = ["reading"];
+// const mergedHobbies = [...hobbies, ...newHobbies];
+// console.log(mergedHobbies);
+// const user = {
+//     name: "Max",
+//     age: 34,
+// }
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user
+// }
+// console.log(extendedUser);
 
+const password = prompt("Enter your password");
+if (password === "hello") {
+    console.log("hello works");
+} else if (password === "world") {
+    console.log("world works");
+} else {
+    console.log("Acces not granted");
+}
+const hobbies = ["sports", "cooking", "reading", "traveling"];
+for (const hobby of hobbies) {
+    console.log(hobby);
+}
 
 
 
