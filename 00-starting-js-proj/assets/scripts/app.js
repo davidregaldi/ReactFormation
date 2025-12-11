@@ -166,9 +166,9 @@
 // }
 // init();
 
-let userMessage = 'Hello!';
-userMessage = userMessage.concat(' there!');
-console.log(userMessage);
-const hobbies = ['Sports', 'Cooking'];
-hobbies.push('Reading');
-console.log(hobbies);   
+// let userMessage = 'Hello!';
+// userMessage = userMessage.concat(' there!');
+// console.log(userMessage);
+// const hobbies = ['Sports', 'Cooking'];
+// hobbies.push('Reading');
+// console.log(hobbies);   
