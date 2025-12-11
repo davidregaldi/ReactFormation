@@ -158,12 +158,17 @@
 // }
 // greeter(() => console.log("Hi"));
 
-function init() {
-    function greet() {
-        console.log("Hello");
-    }
-    greet();
-}
-init();
+// function init() {
+//     function greet() {
+//         console.log("Hello");
+//     }
+//     greet();
+// }
+// init();
 
-
+let userMessage = 'Hello!';
+userMessage = userMessage.concat(' there!');
+console.log(userMessage);
+const hobbies = ['Sports', 'Cooking'];
+hobbies.push('Reading');
+console.log(hobbies);   
