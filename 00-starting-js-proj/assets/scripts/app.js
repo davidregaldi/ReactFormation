@@ -127,18 +127,21 @@
 // }
 // console.log(extendedUser);
 
-const password = prompt("Enter your password");
-if (password === "hello") {
-    console.log("hello works");
-} else if (password === "world") {
-    console.log("world works");
-} else {
-    console.log("Acces not granted");
-}
-const hobbies = ["sports", "cooking", "reading", "traveling"];
-for (const hobby of hobbies) {
-    console.log(hobby);
-}
+// const password = prompt("Enter your password");
+// if (password === "hello") {
+//     console.log("hello works");
+// } else if (password === "world") {
+//     console.log("world works");
+// } else {
+//     console.log("Acces not granted");
+// }
+// const hobbies = ["sports", "cooking", "reading", "traveling"];
+// for (const hobby of hobbies) {
+//     console.log(hobby);
+// }
+
+const list = document.querySelector("ul");
+list.remove();
 
 
 
