@@ -97,13 +97,24 @@
 // const editedHobbies = hobbies.map((item) => ({ name: item }))
 // console.log(editedHobbies);
 
-function transformToObjects(numberArray) {
-    return numberArray.map((item) => ({ val: item }));
-}
+// function transformToObjects(numberArray) {
+//     return numberArray.map((item) => ({ val: item }));
+// }
+// const numberArray = [1, 2, 3];
+// const transformedArray = transformToObjects(numberArray);
+// console.log(transformedArray);
 
-const numberArray = [1, 2, 3];
-const transformedArray = transformToObjects(numberArray);
-console.log(transformedArray);
+const [firstName, lastName] = ["max", "Scharzmuller"];
+console.log(firstName);
+console.log(lastName);
+const { name: userName, age } = {
+    name: "max",
+    age: 34,
+}
+console.log(userName, age);
+
+
+
 
 
 
