@@ -21,7 +21,7 @@ function App() {
             <CoreConcept {...CORE_CONCEPTS[3]} />
           </ul>
         </section>
-        <section id="exemples">
+        <section id="examples">
           <h2>Examples</h2>
           <menu>
             <TabButton>Components</TabButton>
